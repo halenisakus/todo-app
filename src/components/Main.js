@@ -30,10 +30,12 @@ export function Main(props) {
     handleSubmit,
     groupNameInput,
     addGroup,
+    cardDelete,
   } = props;
   return (
     <main className="main">
-      <Column groups={groups} />
+      <Column groups={groups} cardDelete={cardDelete} />
+      
       <div>
         <div className={'main-form' + (ifClickGroup ? '-show' : ' ')}>
           <label htmlFor="GroupName" className="main-form-show-label">

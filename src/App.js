@@ -7,7 +7,7 @@ import './App.css';
 class App extends Component {
   constructor() {
     super();
-    this.state = {
+      this.state = {
       ifClickEvent: 0,
       ifClickGroup: 0,
       groupNameInput: '',
@@ -23,6 +23,7 @@ class App extends Component {
           groupName: 'Okul',
           cards: [
             {
+              card_Id:1,
               header: 'Odev',
               text: 'Okul Odevlerini Yapmayi iniutma',
               imgSrc: '',
@@ -30,6 +31,7 @@ class App extends Component {
               tags: 1,
             },
             {
+              card_Id:2,
               header: 'Proje Teslimi',
               text: 'Oyun Programlama odevi teslim edilecek',
               imgSrc: '',
@@ -43,6 +45,7 @@ class App extends Component {
           groupName: 'Is',
           cards: [
             {
+              card_Id:3,
               header: 'Scrum Bulusmasi',
               text: 'Okul Odevlerini Yapmayi Unutma',
               imgSrc: '',
@@ -56,6 +59,7 @@ class App extends Component {
           groupName: 'Haftasonu',
           cards: [
             {
+              card_Id:4,
               header: 'Piknik',
               text:
                 'aOkul arkadaslari ile beraber piknige gidilecek. Haftasonuna kadar isleri hallet',
@@ -68,7 +72,9 @@ class App extends Component {
         {
           groupId: 8,
           groupName: 'E-spor',
-          cards: [],
+          cards: [{
+            card_Id:5,
+          }],
         },
       ],
     };
@@ -76,6 +82,12 @@ class App extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.addGroup = this.addGroup.bind(this);
+    this.cardDelete=this.cardDelete.bind(this);
+  }
+
+  cardDelete(e) {
+    this.setState(()=>({groups:this.state.groups.filter(x=>x.groupId!==e)}))
+    console.log(e);
   }
 
 
@@ -90,8 +102,8 @@ class App extends Component {
       eventGroupName,
     } = this.state;
     let index;
-    // eslint-disable-next-line array-callback-return
-    groups.map((val, i) => {
+    
+    groups.forEach((val, i) => {
       console.log('val', val.groupName);
       console.log('eventGroupName', eventGroupName);
       if (val.groupName === eventGroupName) {
@@ -125,7 +137,6 @@ class App extends Component {
   }
 
   addGroup(e) {
-    // const { name, value } = e.target;
     const { groups, groupNameInput } = this.state;
     console.log(groups.length);
     let lastGroup = groups[groups.length - 1]; // groups[3]
@@ -161,7 +172,6 @@ class App extends Component {
   }
 
   render() {
-    //console.log((I.Map(this.state.groups2.get(2)).set('groupIda','asd')).toJS());
     const {
       groups,
       ifClickEvent,
@@ -187,6 +197,7 @@ class App extends Component {
           addGroup={this.addGroup}
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
+          cardDelete={this.cardDelete}
 
         />
       </div>
