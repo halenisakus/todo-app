@@ -85,9 +85,17 @@ class App extends Component {
     this.cardDelete=this.cardDelete.bind(this);
   }
 
-  cardDelete(e) {
-    this.setState(()=>({groups:this.state.groups.filter(x=>x.groupId!==e)}))
-    console.log(e);
+  cardDelete(groupId,i) {
+    const {groups} =this.state;
+   // this.setState(()=>({groups:this.state.groups.filter(x=>x.groupId!==groupId)}))
+    //console.log(groupId);
+    let newGroup=groups.filter(x=>x.groupId===groupId)
+    console.log('new group eski',newGroup);
+    newGroup[0].cards.splice(i,1);
+    console.log('new group yeni',newGroup);
+    console.log(i);
+    this.setState({groups});
+
   }
 
 

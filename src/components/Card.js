@@ -9,6 +9,7 @@ function Card(props ) {
     console.log(groupId);
     return (
          cards.map((card, i) => {
+           //console.log('i'+'cardheader'+i+card.header);
              return (
             <div key={card.header + i} className="card" >
                 <div className="card-left" >
@@ -21,7 +22,7 @@ function Card(props ) {
                <div className="card-right-image">IMG</div>
                <div className="card-right-date">{card.date}</div>
             </div>
-               <button key={cards.groupId +groupId} onClick={()=>cardDelete(groupId)} className="">DELETE CARD</button>
+               <button key={cards.groupId +groupId} onClick={()=>cardDelete(groupId,i)} className="">DELETE CARD</button>
           </div>
           
         

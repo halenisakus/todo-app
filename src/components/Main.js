@@ -14,6 +14,7 @@
 
 import React from 'react';
 import Column from './Column';
+import Card from './Card'
 import '../styles/Main.scss';
 
 export function Main(props) {
@@ -30,7 +31,10 @@ export function Main(props) {
     handleSubmit,
     groupNameInput,
     addGroup,
+    deleteCard,
     cardDelete,
+    deleteColumn,
+    cards,
   } = props;
   return (
     <main className="main">

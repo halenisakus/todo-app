@@ -1,43 +1,55 @@
-@import './Base.scss';
-.column {
-    width: 60%;
-    box-sizing: border-box;
-    padding: 20px;
-    min-width: 365px;
-    //#ToDo MARGIN kaldir sonradan
-    //margin-left: 3px;
-    display: flex;
-    flex-direction: column;
-    @include mq() {
-        width: 27%;
-        border-right: 5px $acikmavi;
-        min-width: 310px;
-        margin-bottom: 40px;
-    }
-    &-header {
-        font-weight: 700;
-        font-size: 36px;
-        margin-bottom: 18px;
-        color: $acikmavi;
-        padding: 3px;
-        //border-bottom: 2px solid $logo;
-    }
-    &-button {
-        padding: 3px;
-        font-size: 12px;
-        font-weight: 700;
-        height: 40px;
-        width: 90px;
-        background-color: $acikmavi;
-        color: $koyusari;
-        margin-left: auto;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        border: 2px solid $koyu;
+    @import './Base.scss';
+    .column {
+        width: 60%;
+        box-sizing: border-box;
+        padding: 20px;
+        min-width: 365px;
+        //#ToDo MARGIN kaldir sonradan
+        //margin-left: 3px;
+        display: flex;
+        flex-direction: column;
         @include mq() {
-            font-size: 10px;
-            margin-right: 10px;
-            width: 110px;
+            width: 27%;
+            border-right: 5px $acikmavi;
+            min-width: 310px;
+            margin-bottom: 40px;
+        }
+        &-header {
+            font-weight: 700;
+            font-size: 36px;
+            margin-bottom: 18px;
+            color: $acikmavi;
+            padding: 3px;
+            //border-bottom: 2px solid $logo;
+        }
+        &-delete-button {
+            padding: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            height: 40px;
+            width: 90px;
+            background-color: $acikmavi;
+            color: $koyu;
+            margin-right: 20px;
+            border-radius: 5px;
+            border: 1px solid $koyu;
+        }
+        &-button {
+            padding: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            height: 40px;
+            width: 90px;
+            background-color: $acikmavi;
+            color: $koyusari;
+            margin-left: auto;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 2px solid $koyu;
+            @include mq() {
+                font-size: 10px;
+                margin-right: 10px;
+                width: 110px;
+            }
         }
     }
-}
