@@ -5,7 +5,7 @@ Bu uygulamayı [Kodluyoruz](https://kodluyoruz.org) ekibinin düzenlediği Front
 ## Installation
 ```
 git clone https://github.com/halenisakus/todo-app.git
-cd todoapp
+cd todo-app
 npm install
 npm start
 
