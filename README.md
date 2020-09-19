@@ -17,6 +17,8 @@ npm start
 
 ##Project Screenshots
 
+![1](https://user-images.githubusercontent.com/47247825/93689831-0cef1b80-fadb-11ea-9a34-3465940f5f31.png)
 
-![2](https://user-images.githubusercontent.com/47247825/93689744-1461f500-fada-11ea-97c1-040a474b911c.png)
-![3](https://user-images.githubusercontent.com/47247825/93689747-14fa8b80-fada-11ea-8042-2e7f5ead920f.png)
+![2](https://user-images.githubusercontent.com/47247825/93689836-1c6e6480-fadb-11ea-9c99-689ee3d7fb34.png)
+
+
