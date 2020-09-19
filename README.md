@@ -6,7 +6,7 @@ Bu uygulamayı [Kodluyoruz](https://kodluyoruz.org) ekibinin düzenlediği Front
  * gh-pages
  * master
 
-## Installation
+## Kurulum
 ```
 git clone https://github.com/halenisakus/todo-app.git
 cd todo-app
@@ -15,7 +15,13 @@ npm start
 
 ```
 
-## Project Screenshots
+
+## Site
+
+[Todo-App](https://codesandbox.io/s/github/halenisakus/todo-app)
+
+
+## Proje Ekran Görüntüleri
 
 ![1](https://user-images.githubusercontent.com/47247825/93689831-0cef1b80-fadb-11ea-9a34-3465940f5f31.png)
 
