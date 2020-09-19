@@ -15,17 +15,17 @@ class App extends Component {
       eventContent: '',
       eventTags: '2',
       eventDate: '',
-      eventGroupName: 'Okul',
+      eventGroupName: 'Etkinlik',
       // todo Buradaki Default deger dinamiklesecek
       groups: [
         {
           groupId: 1,
-          groupName: 'Okul',
+          groupName: 'Etkinlik',
           cards: [
             {
               card_Id:1,
               header: 'Odev',
-              text: 'Okul Odevlerini Yapmayi iniutma',
+              text: 'Okul Odevlerini yapmayi unutma',
               imgSrc: '',
               date: '29-06-2020',
               tags: 1,
@@ -33,7 +33,7 @@ class App extends Component {
             {
               card_Id:2,
               header: 'Proje Teslimi',
-              text: 'Oyun Programlama odevi teslim edilecek',
+              text: 'Proje teslim edilecek',
               imgSrc: '',
               date: '30-06-2020',
               tags: 1,
@@ -46,8 +46,8 @@ class App extends Component {
           cards: [
             {
               card_Id:3,
-              header: 'Scrum Bulusmasi',
-              text: 'Okul Odevlerini Yapmayi Unutma',
+              header: 'Blog yazısı',
+                text: 'Blog yazısı güncellenecek.   ',
               imgSrc: '',
               date: '29-06-2020',
               tag: 2,
@@ -62,7 +62,7 @@ class App extends Component {
               card_Id:4,
               header: 'Piknik',
               text:
-                'aOkul arkadaslari ile beraber piknige gidilecek. Haftasonuna kadar isleri hallet',
+                'Pikniğe gidilecek',
               imgSrc: '',
               date: '01-07-2020',
               tag: 3,
@@ -71,7 +71,7 @@ class App extends Component {
         },
         {
           groupId: 8,
-          groupName: 'E-spor',
+          groupName: 'Spor',
           cards: [{
             card_Id:5,
           }],
