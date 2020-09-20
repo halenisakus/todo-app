@@ -1,4 +1,4 @@
-# ToDo Uygulaması
+# Todo Uygulaması
 Bu uygulamayı [Kodluyoruz](https://kodluyoruz.org) ekibinin düzenlediği Frontend Web Geliştirme Bootcamp'inda geliştirdim. Kullanıcı Yapacağı etkinlikleri, gruplara ayırarak ekleme silme işlemleri yapabilmektedir.
 
 ## Branch
@@ -21,7 +21,7 @@ npm start
 [Todo-App](https://codesandbox.io/s/github/halenisakus/todo-app)
 
 
-## Proje Ekran Görüntüleri
+## Uygulama Görünümü
 
 ![1](https://user-images.githubusercontent.com/47247825/93689831-0cef1b80-fadb-11ea-9a34-3465940f5f31.png)
 
